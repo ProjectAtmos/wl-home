@@ -1,0 +1,864 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<title>Our creations | WarpLight</title>
+<link rel="icon" type="image/x-icon" href="media/Favicon.png">
+	
+<style>
+	
+	h1 {
+		
+		font-family: Lato;
+		font-weight: 600;
+		font-size: 24px;
+		color: #F9F9F9;
+		text-align: center;
+		margin-top: 0px;
+		margin-bottom: 1.25;
+		
+	}
+	
+	h2 {
+		
+		font-family: Lato;
+		font-weight: 400;
+		font-size: 22px;
+		color: #F9F9F9;
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 40px;
+		
+	}
+	
+	h3 {
+		
+		font-family: Lato;
+		font-weight: 400;
+		font-size: 22px;
+		color: #F9F9F9;
+		text-align: left;
+		margin-top: 20px;
+		margin-bottom: 0px;
+		
+	}
+	
+	h4 {
+		
+		font-family: Lato;
+		font-weight: 400;
+		font-size: 22px;
+		color: #F9F9F9;
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 0px;
+		
+	}
+	
+	name {
+		
+		font-family: Lato;
+		font-weight: 600;
+		font-size: 22px;
+		color: #F9F9F9;
+		text-align: left;
+		margin: 0px;		
+		
+	}
+	
+	roles {
+		
+		font-family: Lato;
+		font-weight: 400;
+		font-size: 18px;
+		color: #F9F9F9;
+		text-align: left;
+		margin: 0px;		
+		
+		<!-- max-width: 40%; -->
+		
+	}
+	
+	p {
+		
+		font-family: Lato;
+		font-weight: 400;
+		font-size: 18px;
+		color: #F9F9F9;
+		text-align: left;
+		margin-top: 20px;
+		margin-bottom: 0px;
+
+	}
+	
+	buttontext {
+		
+		font-family: Lato;
+		font-weight: 400;
+		font-size: 18px;
+		margin-top: 20px;
+		
+	}
+	
+	footer {
+		
+		font-family: Lato;
+		font-weight: 200;
+		font-size: 10px;
+		color: #c1c1c1;
+		text-align: center;
+		margin-top: 10px;
+
+	}
+	
+	a {
+		
+		color: #F9F9F9;
+		
+	}
+	
+	a:link {
+		
+		text-decoration: none;
+	
+	}
+	
+	a:visited {
+		
+		text-decoration: none;
+	
+	}
+	
+	a:hover {
+		
+		text-decoration: none;
+	
+	}
+	
+	a:active {
+		
+		text-decoration: none;
+	
+	}
+
+	.topicon {
+		
+		fill: #F9F9F9;
+		float: center;
+		display: block;
+		margin: 0 auto;
+		max-height: 1.75rem;
+
+	}
+	
+	.boticon {
+		
+		fill: #C1C1C1;
+		float: center;
+		display: block;
+		margin: 0 auto;
+		max-height: 2.188rem;
+		margin-top: 3.75rem;
+	
+	}
+	
+	.pagesys {
+		
+		background-color: #131313;
+		
+	}
+	
+	.contentcontainer {
+		
+		background: #232323;
+		margin: 0 auto;
+		padding: 2.5rem;
+		max-width: 46.845rem;
+		border-radius: 0.625rem;
+		box-shadow: 0rem 0.125rem 0.75rem #00000014;
+		
+	}
+	
+	.buttoncontainer {
+		
+		width: 100%;
+		height: 100%;
+		display: inline-flex;
+		justify-content: center;
+		margin-top: 0.125rem;
+		margin-bottom: 1.25rem;
+
+		
+	}
+	
+	.button {
+		
+		color: #F9F9F9;
+		transition-duration: 0.4s;
+		background-color: #232323;
+  		border: 0.063rem solid #343434;
+		border-radius: 0.313rem;
+		margin: 0.313rem;
+		padding: 0.5rem;
+		
+	}
+	
+	.button:hover {
+		
+		transition-duration: 0.4s;
+		background-color: #404040;
+		
+	}
+	
+	.button:active {
+		
+		transition-duration: 0.4s;
+		background-color: #555555;
+		
+	}
+	
+	.bionav {
+		
+		font-weight: 400;
+		
+	}
+	
+	.boxicontainer {
+		
+		position: absolute;
+		float: right;
+		
+	}
+	
+	.boxinav {
+	
+		color: #F9F9F9;
+		transition-duration: 0.4s;
+		font-size: 1.25rem;
+		width: 1.25rem;
+		height: 1.25rem;
+		border: 0.063rem solid #343434;
+		border-radius: 100%;
+		padding: 0.5rem;
+		margin-right: 0.625rem;
+		cursor: pointer;
+		
+	}
+	
+	.boxinav:hover {
+		
+		transition-duration: 0.4s;
+		background-color: #404040;
+		
+	}
+	
+	.boxinav:active {
+		
+		transition-duration: 0.4s;
+		background-color: #555555;
+		
+	}
+	
+	.imgcontainer {
+		
+		max-width: 100%;
+		height: 100%;
+		margin-bottom: 1.25rem;
+
+	}
+	
+	.imgcontent {
+		
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 0.625rem;
+		
+	}
+	
+	.profilekit {
+		
+		position: relative;
+		margin-bottom: 7.5rem;
+		
+	}
+	
+	.bannercontainer {
+		
+		max-width: 100%;
+		height: 100%;
+		margin-bottom: -0.25rem;
+
+	}
+	
+	.profilecorekit {
+				
+		height: inherit;
+		width: 100%;
+		position: absolute;
+		transform: translateY(-1.813rem);
+		display: flex;
+		align-items: center;
+		padding-top: 0.625rem;
+	
+	}
+	
+	.icon {
+				
+		width: 7.5rem;
+		height: 7.5rem;
+		object-fit: cover;
+		border-radius: 100%;
+		margin-left: 1.5rem;
+		
+	}
+	
+	.namefield {
+
+		
+		margin-left: 1.25rem;
+		margin-right: 2.5rem; 
+
+	}
+	
+	.profilekitspacer {
+			
+			height: 2.5rem;
+			
+		}
+	
+	.topbot {
+			
+			height: 6.25rem;
+			
+		}
+	
+	.fallback {
+		
+		font-family: Lato;
+		font-weight: 200;
+		font-size: 14px;
+		color: #C1C1C1;
+		text-align: left;
+		margin-top: 1.25rem;
+		margin-bottom: 0;
+		
+	}
+	
+	@media only screen and (max-width: 600px) {
+	
+		h1 {
+		
+			font-family: Lato;
+			font-weight: 600;
+			font-size: 22px;
+			color: #F9F9F9;
+			text-align: center;
+			margin-top: 5.6px;
+			margin-bottom: 10px;
+		
+		}
+
+		h2 {
+
+			font-family: Lato;
+			font-weight: 400;
+			font-size: 20px;
+			color: #F9F9F9;
+			text-align: center;
+			margin-top: 20px;
+			margin-bottom: 40px;
+
+		}
+
+		h3 {
+
+			font-family: Lato;
+			font-weight: 400;
+			font-size: 20px;
+			color: #F9F9F9;
+			text-align: left;
+			margin-top: 20px;
+			margin-bottom: 0px;
+
+		}
+
+		h4 {
+
+			font-family: Lato;
+			font-weight: 400;
+			font-size: 20px;
+			color: #F9F9F9;
+			text-align: center;
+			margin-top: 10px;
+			margin-bottom: 0px;
+
+		}
+
+		name {
+
+			font-family: Lato;
+			font-weight: 600;
+			font-size: 20px;
+			color: #F9F9F9;
+			text-align: left;
+			margin: 0px;		
+
+		}
+
+		roles {
+
+			font-family: Lato;
+			font-weight: 400;
+			font-size: 16px;
+			color: #F9F9F9;
+			text-align: left;
+			margin: 0px;
+
+		}
+
+		p {
+
+			font-family: Lato;
+			font-weight: 400;
+			font-size: 18px;
+			color: #F9F9F9;
+			text-align: left;
+			margin-top: 0.625rem;
+			margin-bottom: 0px;
+
+		}
+
+		buttontext {
+
+			font-family: Lato;
+			font-weight: 400;
+			font-size: 18px;
+
+		}
+
+		footer {
+
+			font-family: Lato;
+			font-weight: 200;
+			font-size: 10px;
+			color: #c1c1c1;
+			text-align: center;
+			margin-top: 10px;
+
+		}
+
+		a {
+
+			color: #F9F9F9;
+
+		}
+
+		a:link {
+
+			text-decoration: none;
+
+		}
+
+		a:visited {
+
+			text-decoration: none;
+
+		}
+
+		a:hover {
+
+			text-decoration: none;
+
+		}
+
+		a:active {
+
+			text-decoration: none;
+
+		}
+
+		.topicon {
+
+			fill: #F9F9F9;
+			float: center;
+			display: block;
+			margin: 0 auto;
+			max-height: 1.75rem;
+			margin-top: 0.563rem;
+
+		}
+
+		.boticon {
+
+			fill: #C1C1C1;
+			float: center;
+			display: block;
+			margin: 0 auto;
+			max-height: 2.188rem;
+			margin-top: 3.75rem;
+
+		}
+
+		.contentcontainer {
+
+			background: #232323;
+			margin: 0 auto;
+			padding: 1.25rem;
+			max-width: 46.845rem;
+			border-radius: 0.625rem;
+			box-shadow: 0rem 0.125rem 0.75rem #00000014;
+
+		}
+
+		.buttoncontainer {
+
+			width: 100%;
+			height: 100%;
+			display: block;
+			text-align: center;
+			margin-top: 0.125rem;
+			margin-bottom: 1.25rem;
+
+		}
+
+		.button {
+
+			color: #F9F9F9;
+			transition-duration: 0.4s;
+			background-color: #232323;
+			border: 0.063rem solid #343434;
+			border-radius: 0.313rem;
+			margin: 0.313rem;
+			padding: 0.5rem;
+			white-space: nowrap;
+			line-height: 2.5rem;
+			line-height: 50px;
+
+		}
+
+		.button:hover {
+
+			transition-duration: 0.4s;
+			background-color: #404040;
+
+		}
+
+		.button:active {
+
+			transition-duration: 0.4s;
+			background-color: #555555;
+
+		}
+
+		.bionav {
+
+			font-weight: 400;
+
+		}
+
+		.boxicontainer {
+
+			position: absolute;
+			float: right;
+
+		}
+
+		.boxinav {
+
+			color: #F9F9F9;
+			transition-duration: 0.4s;
+			font-size: 1.25rem;
+			width: 1.25rem;
+			height: 1.25rem;
+			border: 0.063rem solid #343434;
+			border-radius: 100%;
+			padding: 0.5rem;
+			margin-right: 0.625rem;
+
+		}
+
+		.boxinav:hover {
+
+			transition-duration: 0.4s;
+			background-color: #404040;
+
+		}
+
+		.boxinav:active {
+
+			transition-duration: 0.4s;
+			background-color: #555555;
+
+		}
+
+		.imgcontainer {
+
+			max-width: 100%;
+			height: 100%;
+			margin-bottom: 1.25rem;
+
+		}
+
+		.imgcontent {
+
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 0.625rem;
+
+		}
+
+		.profilekit {
+
+			position: relative;
+			margin-bottom: 0.625rem;
+
+		}
+
+		.bannercontainer {
+
+			max-width: 100%;
+			height: 100%;
+			margin-bottom: -0.25rem;
+
+		}
+
+		.profilecorekit {
+
+			height: inherit;
+			width: 100%;
+			position: static;
+			transform: translateY(0rem);
+			display: flex;
+			align-items: center;
+			padding-top: 0.625rem;
+
+		}
+
+		.icon {
+
+			width: 3.75rem;
+			height: 3.75rem;
+			object-fit: cover;
+			border-radius: 100%;
+			margin-left: 0px;
+
+		}
+
+		.ccwsicon {
+
+			width: 3.75rem;
+			height: 3.75rem;
+			object-fit: cover;
+			border-radius: 100%;
+			margin-left: 1.25rem;
+			animation: rotation 30s linear infinite;
+
+
+		}
+
+		@keyframes rotation {
+
+				0% {
+
+					transform: rotate(360deg);
+
+				}
+
+				100% {
+
+					transform: rotate(0deg);
+
+				}
+
+
+			}
+
+		.namefield {
+
+			margin-left: 0.625rem;
+			margin-right: 0.625rem; 
+
+		}
+		
+		.profilekitspacer {
+			
+			height: 1.25rem;
+			
+		}
+		
+		.topbot {
+			
+			height: 3.125rem;
+			
+		}
+		
+		.fallback {
+			
+			margin-top: 0.625rem;
+			
+		}
+		
+	}
+	
+	@media (prefers-color-scheme: light) {
+		
+		h1, h2, h3, h4, name, roles, p, a, .topicon {
+		
+		color: #131313;
+		
+		}
+
+		.topicon {
+
+			fill: #131313;
+
+		}
+
+		.pagesys {
+
+			background-color: #F2F2F2;
+
+		}
+
+		.contentcontainer {
+
+			background: #FFFFFF;
+			box-shadow: 0rem 0.125rem 0.75rem #00000014;
+
+		}
+
+		.button {
+
+			color: #131313;
+			background-color: #FFFFFF;
+			border: 0.063rem solid #F5F5F5;
+
+		}
+
+		.button:hover {
+
+			background-color: #F2F2F2;
+
+		}
+
+		.button:active {
+
+			background-color: #E9E9E9;
+
+		}
+
+		.boxinav {
+
+			color: #131313;
+			border: 0.063rem solid #F5F5F5;
+
+		}
+
+		.boxinav:hover {
+
+			background-color: #F2F2F2;
+
+		}
+
+		.boxinav:active {
+
+			background-color: #E9E9E9;
+
+		}
+		
+	}
+	
+</style>	
+	
+</head>
+	
+	<body class="pagesys">
+		
+		<div class="topbot"></div>
+
+		<div class="contentcontainer">
+
+			<div class="boxicontainer"><i class="bx bx-arrow-back boxinav" onclick="history.back()"></i><i class="bx bx-home boxinav boxishare" onclick="location.pathname='/'"></i></div>
+
+			<h1>Our creations</h1>
+
+			<h2>What we've built &amp; what's next</h2>
+
+			<div class="profilekit">
+			
+				<div class="bannercontainer">
+					
+					<img class="imgcontent" src="media/atmos/atmosbanner.png" alt="Profile background graphic"/>
+					
+				</div>
+
+				<div class="profilecorekit">
+					
+					<img class="icon" src="media/atmos/atmosicon.png" alt="Profile icon"/>
+					
+					<div class="namefield">
+							
+						<name>Atmos</name><br><roles>Released June 21st, 2019</roles>
+							
+					</div>
+					
+				</div>
+			
+			</div>
+			
+			<p>Built as a spiritual successor to Google+, Atmos by WarpLight enables users to post text, images, media, and so much more. As it's built on web technologies, it's accessible from most popular web browsers. Users can categorize the topics they post into collections that others can follow, and users can create communities of any size for anything, with built-in support for categories &amp; moderation.</p>
+			
+			<p>Atmos is designed &amp; built from the ground up to be for everyone, everywhere, so whether you're an artist, photographer, poet, or someone who just wants to share a thought or two, Atmos is ready for you. Text posts can have up to 5,000 characters, and images can total up to 300 MB &amp; 480 MP per post over 30 images. And in 2023, it's taking an industry-leading jump up to 600 MB &amp; 600 MP per post.¹</p>
+			
+			<p>Other features include the ability to attach polls with up to 30 options, web links with self-generating previews, Tweet embeds via links, and even embedded videos via supported links. And with over 200 changes in the pipeline, there's always something new around the corner that'll take Atmos to even greater heights.</p>
+			
+			<p>Unlike other platforms, you don't need to wait for approval to start posting, you don't need an account to explore the platform, and you don't need to pay any fees or beg for invites to get in. That's because we aren't building Atmos for the past, we're setting it up for the future.</p>
+			
+			<p>Links: <u><a href="https://atmos.warplight.dev/" title="Visit Atmos" target="_blank">Atmos</a></u> | <u><a href="https://medium.com/p/3891b027c5ce/" title="See what's new in the August 2022 quality update" target="_blank">August 2022 quality update</a></u></p>
+			
+			<p class="fallback">¹ Each individual image must be under 10 MB and 16 MP. After a future capacity update, each individual must be under 20 MB and 20 MP.</p>
+			
+			<div class="profilekitspacer"></div>
+			
+			<div class="profilekit">
+			
+				<div class="bannercontainer">
+					
+					<img class="imgcontent" src="media/rapid/rapidbanner.png" alt="Profile background graphic"/>
+					
+				</div>
+
+				<div class="profilecorekit">
+					
+					<img class="icon" src="media/rapid/rapidicon.png" alt="Profile icon"/>
+					
+					<div class="namefield">
+							
+						<name>Rapid</name><br><roles>Planned messaging service</roles>
+							
+					</div>
+					
+				</div>
+			
+			</div>
+			
+			<p>Rapid by WarpLight is our vision for an instant messaging service that is currently in the planning phase. It'll be designed to work seamlessly with other WarpLight platforms such as Atmos, while effortlessly synchronizing your profile &amp; messages across all of your devices through a WarpLight Account.</p>
+
+			<svg class="boticon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 218.1 37.97"><defs></defs><path class="a" d="M0,33.3V29.14H6.4v1.04H1.18v2.08H6.32V33.3H1.18v3.12H.02L0,33.3Z"/><path class="a" d="M9.26,32.78a3.782,3.782,0,0,1,3.78-3.74,3.575,3.575,0,0,1,3.76,3.74,3.791,3.791,0,0,1-3.76,3.74,3.591,3.591,0,0,1-3.78-3.74Zm6.34,0a2.572,2.572,0,1,0-2.56,2.68A2.58,2.58,0,0,0,15.6,32.78Z"/><path class="a" d="M20,29.14h4.28a2.034,2.034,0,0,1,2.1,2.08,2.059,2.059,0,0,1-1.34,1.96l1.34,3.24H25.16l-1.3-3.12H21.18v3.12H20V29.14Zm4.16,3.12a1.04,1.04,0,0,0,0-2.08H21.18v2.08h2.98Z"/><path class="a" d="M34.28,29.14h6.4v1.04H35.46v2.08H40.6V33.3H35.46v2.08h5.22v1.04h-6.4V29.14Z"/><path class="a" d="M43.36,29.14h1.18L47,35.06l2.48-5.92h1.16l-3.12,7.28H46.48l-3.12-7.28Z"/><path class="a" d="M53.44,29.14h6.4v1.04H54.62v2.08h5.14V33.3H54.62v2.08h5.22v1.04h-6.4V29.14Z"/><path class="a" d="M63.08,29.14h4.28a2.034,2.034,0,0,1,2.1,2.08,2.059,2.059,0,0,1-1.34,1.96l1.34,3.24H68.24l-1.3-3.12H64.26v3.12H63.08V29.14Zm4.16,3.12a1.04,1.04,0,1,0,0-2.08H64.26v2.08h2.98Z"/><path class="a" d="M75.12,32.98,72,29.14h1.42l2.3,2.9L78,29.14h1.42L76.3,32.98v3.44H75.12V32.98Z"/><path class="a" d="M81.16,32.78a3.782,3.782,0,0,1,3.78-3.74,3.575,3.575,0,0,1,3.76,3.74,3.791,3.791,0,0,1-3.76,3.74A3.591,3.591,0,0,1,81.16,32.78Zm6.34,0a2.572,2.572,0,1,0-2.56,2.68A2.58,2.58,0,0,0,87.5,32.78Z"/><path class="a" d="M91.9,29.14h1l5.24,5.54V29.14h1.18v7.28h-1l-5.24-5.54v5.54H91.9V29.14Z"/><path class="a" d="M102.68,29.14h6.4v1.04h-5.22v2.08H109V33.3h-5.14v2.08h5.22v1.04h-6.4V29.14Z"/><path class="a" d="M112.28,37.72l.57-2.35,1.04.24-.57,2.36-1.04-.25Z"/><path class="a" d="M122.26,29.14h6.4v1.04h-5.22v2.08h5.14V33.3h-5.14v2.08h5.22v1.04h-6.4V29.14Z"/><path class="a" d="M131.34,29.14h1.18l2.46,5.92,2.48-5.92h1.16l-3.12,7.28h-1.04l-3.12-7.28Z"/><path class="a" d="M141.42,29.14h6.4v1.04H142.6v2.08h5.14V33.3H142.6v2.08h5.22v1.04h-6.4V29.14Z"/><path class="a" d="M151.06,29.14h4.28a2.034,2.034,0,0,1,2.1,2.08,2.059,2.059,0,0,1-1.34,1.96l1.34,3.24h-1.22l-1.3-3.12h-2.68v3.12h-1.18V29.14Zm4.16,3.12a1.04,1.04,0,0,0,0-2.08h-2.98v2.08h2.98Z"/><path class="a" d="M163.1,32.98l-3.12-3.84h1.42l2.3,2.9,2.28-2.9h1.42l-3.12,3.84v3.44H163.1V32.98Z"/><path class="a" d="M169.64,29.14h1.26L173.3,35l.96-2.48-1.4-3.38h1.26l2.3,5.86,2.38-5.86h1.24l-3.12,7.28h-1.04l-1.02-2.48-1.06,2.48h-1.04l-3.12-7.28Z"/><path class="a" d="M182.84,29.14h1.18v3.12h4.02V29.14h1.18v7.28h-1.18V33.3h-4.02v3.12h-1.18V29.14Z"/><path class="a" d="M192.58,29.14h6.4v1.04h-5.22v2.08h5.14V33.3h-5.14v2.08h5.22v1.04h-6.4V29.14Z"/><path class="a" d="M202.22,29.14h4.28a2.034,2.034,0,0,1,2.1,2.08,2.059,2.059,0,0,1-1.34,1.96l1.34,3.24h-1.22l-1.3-3.12H203.4v3.12h-1.18V29.14Zm4.16,3.12a1.04,1.04,0,0,0,0-2.08H203.4v2.08h2.98Z"/><path class="a" d="M211.7,29.14h6.4v1.04h-5.22v2.08h5.14V33.3h-5.14v2.08h5.22v1.04h-6.4V29.14Z"/><path class="a" d="M64.85.2h2.52l4.8,11.72,1.92-4.96L71.29.2h2.52l4.6,11.72L83.17.2h2.48L79.41,14.76H77.33L75.29,9.8l-2.12,4.96H71.09Z"/><path class="a" d="M84.37,10.6a4.475,4.475,0,0,1,4.48-4.36,4.232,4.232,0,0,1,4.48,4.36v4.16h-2.2v-.72a3.415,3.415,0,0,1-2.48.92,4.116,4.116,0,0,1-4.28-4.36Zm6.72,0a2.24,2.24,0,1,0-4.48,0,2.2,2.2,0,0,0,2.24,2.28A2.221,2.221,0,0,0,91.09,10.6Z"/><path class="a" d="M95.49,9.56a3,3,0,0,1,3.12-3.12h.8V8.52h-.64a.987.987,0,0,0-1.04,1.04v5.2H95.49V9.56Z"/><path class="a" d="M101.25,10.6a4.475,4.475,0,0,1,4.48-4.36,4.232,4.232,0,0,1,4.48,4.36,4.4,4.4,0,0,1-4.36,4.36,3.911,3.911,0,0,1-2.36-.72v4.68h-2.24V10.6Zm6.72,0a2.24,2.24,0,1,0-4.48,0,2.2,2.2,0,0,0,2.24,2.28A2.221,2.221,0,0,0,107.97,10.6Z"/><path class="a" d="M112.45.2h2.36V12.68h6.24v2.08h-8.6Z"/><path class="a" d="M122.49,1.36A1.383,1.383,0,0,1,123.89,0a1.349,1.349,0,0,1,1.36,1.36,1.383,1.383,0,0,1-1.36,1.4A1.417,1.417,0,0,1,122.49,1.36Zm.24,5.08h2.24v8.32h-2.24Z"/><path class="a" d="M127.61,14.84h2.12a2.194,2.194,0,0,0,2.28,2.32,2.26,2.26,0,0,0,2.28-2.4v-.72a3.349,3.349,0,0,1-2.48.92,4.116,4.116,0,0,1-4.28-4.36,4.475,4.475,0,0,1,4.48-4.36,4.232,4.232,0,0,1,4.48,4.36v4.16a4.346,4.346,0,0,1-4.48,4.36,4.064,4.064,0,0,1-4.4-4.28Zm6.64-4.24a2.24,2.24,0,1,0-4.48,0,2.2,2.2,0,0,0,2.24,2.28A2.221,2.221,0,0,0,134.25,10.6Z"/><path class="a" d="M139.21.2h2.24V7.16a3.251,3.251,0,0,1,2.44-.92,4.116,4.116,0,0,1,4.28,4.36v4.16h-2.24V10.6a2.24,2.24,0,1,0-4.48,0v4.16h-2.24V.2Z"/><path class="a" d="M151.37,8.52h-1.12V6.44h1.12V.2h2.24V6.44h1.12V8.52h-1.12v6.24h-2.24Z"/></svg>
+
+			<footer class="footer">© 2022 WarpLight | <u><a style="color: #c1c1c1" href="https://medium.com/@WarpLight/" title="View legal documents" target="_blank">Legal</a></u></footer>
+
+		</div>
+		
+		<div class="topbot"></div>
+	
+	</body>
+	
+</html>

@@ -1,0 +1,910 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<title>Our creations | WarpLight</title>
+<link rel="icon" type="image/x-icon" href="media/Favicon.png">
+	
+<style>
+	
+	h1 {
+		
+		font-family: Lato;
+		font-weight: 600;
+		font-size: 24px;
+		color: #F9F9F9;
+		text-align: center;
+		margin-top: 0px;
+		margin-bottom: 1.25;
+		
+	}
+	
+	h2 {
+		
+		font-family: Lato;
+		font-weight: 400;
+		font-size: 22px;
+		color: #F9F9F9;
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 40px;
+		
+	}
+	
+	h3 {
+		
+		font-family: Lato;
+		font-weight: 400;
+		font-size: 22px;
+		color: #F9F9F9;
+		text-align: left;
+		margin-top: 20px;
+		margin-bottom: 0px;
+		
+	}
+	
+	h4 {
+		
+		font-family: Lato;
+		font-weight: 400;
+		font-size: 22px;
+		color: #F9F9F9;
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 0px;
+		
+	}
+	
+	name {
+		
+		font-family: Lato;
+		font-weight: 600;
+		font-size: 22px;
+		color: #F9F9F9;
+		text-align: left;
+		margin: 0px;		
+		
+	}
+	
+	roles {
+		
+		font-family: Lato;
+		font-weight: 400;
+		font-size: 18px;
+		color: #F9F9F9;
+		text-align: left;
+		margin: 0px;		
+		
+		<!-- max-width: 40%; -->
+		
+	}
+	
+	p {
+		
+		line-height: 1.5;
+		font-family: Lato;
+		font-weight: 400;
+		font-size: 20px;
+		color: #F9F9F9;
+		text-align: left;
+		margin-top: 20px;
+		margin-bottom: 0px;
+
+	}
+	
+	buttontext {
+		
+		font-family: Lato;
+		font-weight: 400;
+		font-size: 18px;
+		
+	}
+	
+	footer {
+		
+		font-family: Lato;
+		font-weight: 200;
+		font-size: 10px;
+		color: #c1c1c1;
+		text-align: center;
+		margin-top: 10px;
+
+	}
+	
+	a {
+		
+		color: #F9F9F9;
+		
+	}
+	
+	a:link {
+		
+		text-decoration: none;
+	
+	}
+	
+	a:visited {
+		
+		text-decoration: none;
+	
+	}
+	
+	a:hover {
+		
+		text-decoration: none;
+	
+	}
+	
+	a:active {
+		
+		text-decoration: none;
+	
+	}
+
+	.topicon {
+		
+		fill: #F9F9F9;
+		float: center;
+		display: block;
+		margin: 0 auto;
+		max-height: 1.75rem;
+		margin-top: 0.3rem;
+
+	}
+	
+	.boticon {
+		
+		fill: #C1C1C1;
+		float: center;
+		display: block;
+		margin: 0 auto;
+		max-height: 2.188rem;
+		margin-top: 3.75rem;
+	
+	}
+	
+	.pagesys {
+		
+		background-color: #131313;
+		
+	}
+	
+	.contentcontainer {
+		
+		background: #232323;
+		margin: 0 auto;
+		padding: 2.5rem;
+		max-width: 46.845rem;
+		border-radius: 0.625rem;
+		box-shadow: 0rem 0.125rem 0.75rem #00000014;
+		
+	}
+	
+	.buttoncontainer {
+		
+		width: 100%;
+		height: 100%;
+		display: block;
+		text-align: center;
+		
+	}
+	
+	.button {
+		
+		color: #F9F9F9;
+		transition-duration: 0.4s;
+		background-color: #232323;
+  		border: 0.063rem solid #343434;
+		border-radius: 0.313rem;
+		padding: 0.5rem;
+		margin-top: 0.75rem;
+		margin-left: 0.375rem;
+		margin-right: 0.375rem;
+		display: inline-flex;
+		
+	}
+	
+	.button:hover {
+		
+		transition-duration: 0.4s;
+		background-color: #404040;
+		
+	}
+	
+	.button:active {
+		
+		transition-duration: 0.4s;
+		background-color: #555555;
+		
+	}
+	
+	.bionav {
+		
+		font-weight: 400;
+		
+	}
+	
+	.boxicontainer {
+		
+		position: absolute;
+		float: right;
+		
+	}
+	
+	.boxinav {
+	
+		color: #F9F9F9;
+		transition-duration: 0.4s;
+		font-size: 1.25rem;
+		width: 1.25rem;
+		height: 1.25rem;
+		border: 0.063rem solid #343434;
+		border-radius: 100%;
+		padding: 0.5rem;
+		margin-right: 0.625rem;
+		cursor: pointer;
+		
+	}
+	
+	.boxinav:hover {
+		
+		transition-duration: 0.4s;
+		background-color: #404040;
+		
+	}
+	
+	.boxinav:active {
+		
+		transition-duration: 0.4s;
+		background-color: #555555;
+		
+	}
+	
+	.imgcontainer {
+		
+		max-width: 100%;
+		height: 100%;
+		margin-bottom: 1.25rem;
+
+	}
+	
+	.imgcontent {
+		
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 0.625rem;
+		
+	}
+	
+	.profilekit {
+		
+		position: relative;
+		margin-bottom: 7.5rem;
+		
+	}
+	
+	.bannercontainer {
+		
+		max-width: 100%;
+		height: 100%;
+		margin-bottom: -0.25rem;
+
+	}
+	
+	.profilecorekit {
+				
+		height: inherit;
+		width: 100%;
+		position: absolute;
+		transform: translateY(-1.813rem);
+		display: flex;
+		align-items: center;
+		padding-top: 0.625rem;
+	
+	}
+	
+	.icon {
+				
+		width: 7.5rem;
+		height: 7.5rem;
+		object-fit: cover;
+		border-radius: 100%;
+		margin-left: 1.5rem;
+		
+	}
+	
+	.namefield {
+		
+		margin-left: 1.25rem;
+		margin-right: 2.5rem; 
+
+	}
+	
+	.profilekitspacer {
+			
+			height: 2.5rem;
+			
+		}
+	
+	.topbot {
+			
+			height: 6.25rem;
+			
+		}
+	
+	.fallback {
+		
+		font-family: Lato;
+		font-weight: 200;
+		font-size: 14px;
+		color: #C1C1C1;
+		text-align: left;
+		margin-top: 1.25rem;
+		margin-bottom: 0;
+		
+	}
+	
+	@media only screen and (max-width: 600px) {
+	
+		h1 {
+		
+			font-family: Lato;
+			font-weight: 600;
+			font-size: 22px;
+			color: #F9F9F9;
+			text-align: center;
+			margin-top: 5.6px;
+			margin-bottom: 10px;
+		
+		}
+
+		h2 {
+
+			font-family: Lato;
+			font-weight: 400;
+			font-size: 20px;
+			color: #F9F9F9;
+			text-align: center;
+			margin-top: 20px;
+			margin-bottom: 40px;
+
+		}
+
+		h3 {
+
+			font-family: Lato;
+			font-weight: 400;
+			font-size: 20px;
+			color: #F9F9F9;
+			text-align: left;
+			margin-top: 20px;
+			margin-bottom: 0px;
+
+		}
+
+		h4 {
+
+			font-family: Lato;
+			font-weight: 400;
+			font-size: 20px;
+			color: #F9F9F9;
+			text-align: center;
+			margin-top: 10px;
+
+		}
+
+		name {
+
+			font-family: Lato;
+			font-weight: 600;
+			font-size: 20px;
+			color: #F9F9F9;
+			text-align: left;
+			margin: 0px;		
+
+		}
+
+		roles {
+
+			font-family: Lato;
+			font-weight: 400;
+			font-size: 16px;
+			color: #F9F9F9;
+			text-align: left;
+			margin: 0px;
+
+		}
+
+		p {
+
+			line-height: 1.8;
+			font-family: Lato;
+			font-weight: 400;
+			font-size: 18px;
+			color: #F9F9F9;
+			text-align: left;
+			margin-top: 0.625rem;
+			margin-bottom: 0px;
+
+		}
+
+		buttontext {
+
+			font-family: Lato;
+			font-weight: 400;
+			font-size: 18px;
+
+		}
+
+		footer {
+
+			font-family: Lato;
+			font-weight: 200;
+			font-size: 10px;
+			color: #c1c1c1;
+			text-align: center;
+			margin-top: 10px;
+
+		}
+
+		a {
+
+			color: #F9F9F9;
+
+		}
+
+		a:link {
+
+			text-decoration: none;
+
+		}
+
+		a:visited {
+
+			text-decoration: none;
+
+		}
+
+		a:hover {
+
+			text-decoration: none;
+
+		}
+
+		a:active {
+
+			text-decoration: none;
+
+		}
+
+		.topicon {
+
+			fill: #F9F9F9;
+			float: center;
+			display: block;
+			margin: 0 auto;
+			max-height: 1.5rem;
+			margin-top: 0.563rem;
+
+		}
+
+		.boticon {
+
+			fill: #C1C1C1;
+			float: center;
+			display: block;
+			margin: 0 auto;
+			max-height: 2.188rem;
+			margin-top: 3.75rem;
+
+		}
+
+		.contentcontainer {
+
+			background: #232323;
+			margin: 0 auto;
+			padding: 1.25rem;
+			max-width: 46.845rem;
+			border-radius: 0.625rem;
+			box-shadow: 0rem 0.125rem 0.75rem #00000014;
+
+		}
+
+		.buttoncontainer {
+
+			width: 100%;
+			height: 100%;
+			display: block;
+			text-align: center;
+
+		}
+
+		.button {
+
+			color: #F9F9F9;
+			transition-duration: 0.4s;
+			background-color: #232323;
+			border: 0.063rem solid #343434;
+			border-radius: 0.313rem;
+			padding: 0.5rem;
+			margin-top: 0.625rem;
+			margin-left: 0.313rem;
+			margin-right: 0.313rem;
+			white-space: nowrap;
+			
+
+		}
+
+		.button:hover {
+
+			transition-duration: 0.4s;
+			background-color: #404040;
+
+		}
+
+		.button:active {
+
+			transition-duration: 0.4s;
+			background-color: #555555;
+
+		}
+
+		.bionav {
+
+			font-weight: 400;
+
+		}
+
+		.boxicontainer {
+
+			position: absolute;
+			float: right;
+
+		}
+
+		.boxinav {
+
+			color: #F9F9F9;
+			transition-duration: 0.4s;
+			font-size: 1.25rem;
+			width: 1.25rem;
+			height: 1.25rem;
+			border: 0.063rem solid #343434;
+			border-radius: 100%;
+			padding: 0.5rem;
+			margin-right: 0.625rem;
+
+		}
+
+		.boxinav:hover {
+
+			transition-duration: 0.4s;
+			background-color: #404040;
+
+		}
+
+		.boxinav:active {
+
+			transition-duration: 0.4s;
+			background-color: #555555;
+
+		}
+
+		.imgcontainer {
+
+			max-width: 100%;
+			height: 100%;
+			margin-bottom: 1.25rem;
+
+		}
+
+		.imgcontent {
+
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 0.625rem;
+
+		}
+
+		.profilekit {
+
+			position: relative;
+			margin-bottom: 0.625rem;
+
+		}
+
+		.bannercontainer {
+
+			max-width: 100%;
+			height: 100%;
+			margin-bottom: -0.25rem;
+
+		}
+
+		.profilecorekit {
+
+			height: inherit;
+			width: 100%;
+			position: static;
+			transform: translateY(0rem);
+			display: flex;
+			align-items: center;
+			padding-top: 0.625rem;
+
+		}
+
+		.icon {
+
+			width: 3.75rem;
+			height: 3.75rem;
+			object-fit: cover;
+			border-radius: 100%;
+			margin-left: 0px;
+
+		}
+
+		.ccwsicon {
+
+			width: 3.75rem;
+			height: 3.75rem;
+			object-fit: cover;
+			border-radius: 100%;
+			margin-left: 1.25rem;
+			animation: rotation 30s linear infinite;
+
+
+		}
+
+		@keyframes rotation {
+
+				0% {
+
+					transform: rotate(360deg);
+
+				}
+
+				100% {
+
+					transform: rotate(0deg);
+
+				}
+
+
+			}
+
+		.namefield {
+
+			margin-left: 0.625rem;
+			margin-right: 0.625rem; 
+
+		}
+		
+		.profilekitspacer {
+			
+			height: 1.25rem;
+			
+		}
+		
+		.topbot {
+			
+			height: 3.125rem;
+			
+		}
+		
+		.fallback {
+			
+			margin-top: 0.625rem;
+			
+		}
+		
+	}
+	
+	@media (prefers-color-scheme: light) {
+		
+		h1, h2, h3, h4, name, roles, p, a, .topicon {
+		
+		color: #131313;
+		
+		}
+
+		.topicon {
+
+			fill: #131313;
+
+		}
+
+		.pagesys {
+
+			background-color: #F2F2F2;
+
+		}
+
+		.contentcontainer {
+
+			background: #FFFFFF;
+			box-shadow: 0rem 0.125rem 0.75rem #00000014;
+
+		}
+
+		.button {
+
+			color: #131313;
+			background-color: #FFFFFF;
+			border: 0.063rem solid #F5F5F5;
+
+		}
+
+		.button:hover {
+
+			background-color: #F2F2F2;
+
+		}
+
+		.button:active {
+
+			background-color: #E9E9E9;
+
+		}
+
+		.boxinav {
+
+			color: #131313;
+			border: 0.063rem solid #F5F5F5;
+
+		}
+
+		.boxinav:hover {
+
+			background-color: #F2F2F2;
+
+		}
+
+		.boxinav:active {
+
+			background-color: #E9E9E9;
+
+		}
+		
+	}
+	
+</style>	
+	
+</head>
+	
+	<body class="pagesys">
+		
+		<div class="topbot"></div>
+
+		<div class="contentcontainer">
+
+			<div class="boxicontainer"><i class="bx bx-arrow-back boxinav" onclick="history.back()"></i><i class="bx bx-home boxinav boxishare" onclick="location.pathname='/'"></i></div>
+
+			<h1>Our creations</h1>
+
+			<h2>What we've built &amp; what's next</h2>
+
+			<div class="profilekit">
+			
+				<div class="bannercontainer">
+					
+					<img class="imgcontent" src="media/atmos/atmosbanner.png" alt="Profile background graphic"/>
+					
+				</div>
+
+				<div class="profilecorekit">
+					
+					<img class="icon" src="media/atmos/atmosicon.png" alt="Profile icon"/>
+					
+					<div class="namefield">
+							
+						<name>Atmos</name><br><roles>Released June 21st, 2019</roles>
+							
+					</div>
+					
+				</div>
+			
+			</div>
+			
+			<p>Built as a spiritual successor to Google+, Atmos by WarpLight enables users to post text, images, media, and so much more. As it's built on advanced web technologies, it's accessible from most popular web browsers. Users can categorize the topics they post into collections that others can follow, and users can create communities of any size for anything, with built-in support for categories &amp; moderation.</p>
+			
+			<p>Atmos is designed &amp; built from the ground up to be for everyone, everywhere. Posts can contain up to 5,000 characters, and image capacity totals up to 750 MB &amp; 750 MP per-post over 30 images.¹</p>
+			
+			<p>Plus, users can upload videos directly to the Atmos platform at up to 600 MB per file, with resolutions up to 6K for everyone. And with WarpLight Quantum Beta, users can upload images up to 80 MB &amp; 80 MP in size, and videos beyond 8K in resolution at up to 2.4 GB, all for $5 per month. Quantum Beta subscribers can also share their benefits with up to 5 other users.</p>
+			
+			<p>Additional features include the ability to attach polls with up to 30 options, web links with previews, and even embedded videos and images via supported links and file types when hosted on externally, allowing all users to easily exceed the platform's maximum post capacity when necessary.</p>
+			
+			<p>Unlike other platforms, Atmos is designed &amp; built from the ground up for the future. There's no invite systems, waitlists, paywalls or login requirements to view content on the platform. Atmos is the truly next-gen social platform that's out of this world.</p>
+			
+			<p>Links: <u><a href="https://atmos.warplight.dev/" title="Visit Atmos" target="_blank">Atmos</a></u> | <u><a href="https://medium.com/p/1a9f0945a7d1/" title="Learn more about Platform Update 4 on Medium" target="_blank">Platform Update 4</a></u></p>
+			
+			<p class="fallback">¹ Each individual image must be under 25 MB and 25 MP, totalling up to 750 MB &amp; 750 MP across 30 images.</p>
+			
+			<div class="profilekitspacer"></div>
+			
+			<div class="profilekit">
+			
+				<div class="bannercontainer">
+					
+					<img class="imgcontent" src="media/rapid/rapidbanner.png" alt="Profile background graphic"/>
+					
+				</div>
+
+				<div class="profilecorekit">
+					
+					<img class="icon" src="media/rapid/rapidicon.png" alt="Profile icon"/>
+					
+					<div class="namefield">
+							
+						<name>Rapid</name><br><roles>Planned messaging service</roles>
+							
+					</div>
+					
+				</div>
+			
+			</div>
+			
+			<p>Rapid by WarpLight is our vision for an integrated instant messaging service that is currently in the planning phase. Designed to work seamlessly with other WarpLight platforms &amp; services such as Atmos, while effortlessly synchronizing your profile &amp; messages across all of your devices through a WarpLight Account.</p>
+
+			<svg class="boticon" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152.67 24.51">
+			  <g>
+				<path d="M0,21.24v-2.91h4.48v.73H.83v1.46h3.6v.73H.83v2.19H.01v-2.19Z"/>
+				<path d="M6.48,20.87c0-1.44,1.2-2.62,2.65-2.62,1.55,0,2.63,1.06,2.63,2.62,0,1.43-1.21,2.62-2.63,2.62-1.55,0-2.65-1.06-2.65-2.62ZM10.92,20.87c0-1.04-.76-1.88-1.79-1.88s-1.81.84-1.81,1.88.77,1.88,1.81,1.88,1.79-.84,1.79-1.88Z"/>
+				<path d="M14,18.32h3c.88,0,1.47.66,1.47,1.46,0,.62-.36,1.16-.94,1.37l.94,2.27h-.85l-.91-2.19h-1.88v2.19h-.83v-5.1ZM16.91,20.51c.43,0,.73-.29.73-.73s-.29-.73-.73-.73h-2.09v1.46h2.09Z"/>
+				<path d="M24,18.32h4.48v.73h-3.66v1.46h3.6v.73h-3.6v1.46h3.66v.73h-4.48v-5.1Z"/>
+				<path d="M30.35,18.32h.83l1.72,4.15,1.74-4.15h.81l-2.18,5.1h-.73l-2.19-5.1Z"/>
+				<path d="M37.41,18.32h4.48v.73h-3.66v1.46h3.6v.73h-3.6v1.46h3.66v.73h-4.48v-5.1Z"/>
+				<path d="M44.16,18.32h3c.88,0,1.47.66,1.47,1.46,0,.62-.36,1.16-.94,1.37l.94,2.27h-.85l-.91-2.19h-1.88v2.19h-.83v-5.1ZM47.07,20.51c.43,0,.73-.29.73-.73s-.29-.73-.73-.73h-2.09v1.46h2.09Z"/>
+				<path d="M52.58,21.01l-2.19-2.69h.99l1.61,2.03,1.6-2.03h1l-2.19,2.69v2.41h-.83v-2.41Z"/>
+				<path d="M56.81,20.87c0-1.44,1.2-2.62,2.65-2.62,1.55,0,2.63,1.06,2.63,2.62,0,1.43-1.21,2.62-2.63,2.62-1.55,0-2.65-1.06-2.65-2.62ZM61.25,20.87c0-1.04-.76-1.88-1.79-1.88s-1.81.84-1.81,1.88.77,1.88,1.81,1.88,1.79-.84,1.79-1.88Z"/>
+				<path d="M64.33,18.32h.7l3.67,3.88v-3.88h.83v5.1h-.7l-3.67-3.88v3.88h-.83v-5.1Z"/>
+				<path d="M71.88,18.32h4.48v.73h-3.66v1.46h3.6v.73h-3.6v1.46h3.66v.73h-4.48v-5.1Z"/>
+				<path d="M78.59,24.33l.4-1.65.73.17-.4,1.65-.73-.17Z"/>
+				<path d="M85.58,18.32h4.48v.73h-3.66v1.46h3.6v.73h-3.6v1.46h3.66v.73h-4.48v-5.1Z"/>
+				<path d="M91.94,18.32h.83l1.72,4.15,1.74-4.15h.81l-2.18,5.1h-.73l-2.19-5.1Z"/>
+				<path d="M98.99,18.32h4.48v.73h-3.66v1.46h3.6v.73h-3.6v1.46h3.66v.73h-4.48v-5.1Z"/>
+				<path d="M105.74,18.32h3c.88,0,1.47.66,1.47,1.46,0,.62-.36,1.16-.94,1.37l.94,2.27h-.85l-.91-2.19h-1.88v2.19h-.83v-5.1ZM108.65,20.51c.43,0,.73-.29.73-.73s-.29-.73-.73-.73h-2.09v1.46h2.09Z"/>
+				<path d="M114.17,21.01l-2.19-2.69h.99l1.61,2.03,1.6-2.03h1l-2.19,2.69v2.41h-.83v-2.41Z"/>
+				<path d="M118.75,18.32h.88l1.68,4.1.67-1.74-.98-2.37h.88l1.61,4.1,1.67-4.1h.87l-2.19,5.1h-.73l-.71-1.74-.74,1.74h-.73l-2.19-5.1Z"/>
+				<path d="M127.99,18.32h.83v2.19h2.82v-2.19h.83v5.1h-.83v-2.19h-2.82v2.19h-.83v-5.1Z"/>
+				<path d="M134.8,18.32h4.48v.73h-3.66v1.46h3.6v.73h-3.6v1.46h3.66v.73h-4.48v-5.1Z"/>
+				<path d="M141.55,18.32h3c.88,0,1.47.66,1.47,1.46,0,.62-.36,1.16-.94,1.37l.94,2.27h-.85l-.91-2.19h-1.88v2.19h-.83v-5.1ZM144.47,20.51c.43,0,.73-.29.73-.73s-.29-.73-.73-.73h-2.09v1.46h2.09Z"/>
+				<path d="M148.19,18.32h4.48v.73h-3.66v1.46h3.6v.73h-3.6v1.46h3.66v.73h-4.48v-5.1Z"/>
+			  </g>
+			  <g>
+				<g id="Group_61">
+				  <path id="Path_1" d="M50.5.13h2.55l-2.55,10.21h-2.55L50.5.13Z"/>
+				  <path id="Path_2" d="M55.6.13h-2.55l2.55,10.21h2.55L55.6.13h0Z"/>
+				</g>
+				<path id="Path_198" d="M45.39.13l-1.7,6.81-.85-1.7h-2.55l-.85,1.7-1.7-6.81h-2.55l2.55,10.21h2.55l1.28-2.55,1.28,2.55h2.55L47.94.13h-2.55Z"/>
+				<g id="Group_10433">
+				  <path id="Path_53" d="M65.81,5.23h-2.55l2.55,5.1h2.55l-2.55-5.1Z"/>
+				  <path id="Path_54" d="M58.15.13h5.1c1.41,0,2.55,1.14,2.55,2.55s-1.14,2.55-2.55,2.55h-3.82l-1.29-5.1Z"/>
+				</g>
+				<path id="Path_199" d="M73.46.13h-5.1l2.55,10.21h2.55l-1.28-5.1h1.28c1.41,0,2.55-1.14,2.55-2.55h0c0-1.41-1.14-2.55-2.55-2.55Z"/>
+				<path id="Path_216" d="M107.28.13l-.73,2.92-2.92,1.46,1.09-4.37h-2.55l-2.55,10.21h2.55l.73-2.92,2.92-1.46-1.09,4.37h2.55L109.83.13h-2.55Z"/>
+				<path id="Path_217" d="M117.49.13h-5.1l-.64,2.55-1.91,7.66h2.55V2.68h4.47l.64-2.55Z"/>
+				<path id="Path_215" d="M94.52,2.68h4.47l.64-2.55h-5.1c-2.82,0-5.1,2.29-5.1,5.1s2.29,5.1,5.1,5.1h2.55l.64-2.55.32-1.28.64-2.55h-5.42l.64,2.55h1.59l-.32,1.28h-.64c-1.41,0-2.55-1.14-2.55-2.55s1.14-2.55,2.55-2.55h0Z"/>
+				<path d="M85.59.13v1.28c0,.7.57,1.28,1.28,1.28-.7,0-1.28.57-1.28,1.28v6.38h2.55V.13h-2.55Z"/>
+				<g>
+				  <polygon points="83.67 7.79 79.21 7.79 79.21 7.79 79.84 10.34 84.31 10.34 83.67 7.79"/>
+				  <polygon points="79.21 7.79 81.12 .13 78.57 .13 76.65 7.79 79.21 7.79"/>
+				</g>
+			  </g>
+			</svg>
+
+			<footer class="footer">© 2025 WarpLight | <u><a style="color: #c1c1c1" href="https://medium.com/warplight" title="View legal documents & other articles" target="_blank">Legal &amp; publications</a></u></footer>
+
+		</div>
+		
+		<div class="topbot"></div>
+	
+	</body>
+	
+</html>
